@@ -1,4 +1,9 @@
 // 1 - find the element
 const dodger = document.getElementById('dodger')
 
-dodger.addEventListener('')
+function onKeyDown(event) {
+  
+}
+
+// 2 - Add the event listener
+dodger.addEventListener('keydown', onKeyDown)
