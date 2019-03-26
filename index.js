@@ -10,4 +10,4 @@ function onKeyDown(event) {
 }
 
 // 2 - Add the event listener
-dodger.addEventListener('keydown', () => console.log('working?'))
+dodger.addEventListener('keydown', onKeyDown)
