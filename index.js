@@ -10,3 +10,5 @@ function onKeyDown(event) {
 
 // 2 - Add the event listener
 dodger.addEventListener('keydown', onKeyDown)
+
+console.log('hi')
