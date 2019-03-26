@@ -6,7 +6,9 @@ function onKeyDown(event) {
     // how do we actually move this left  
     const currentPosition = parseInt(dodger.style.left)
     // currentPosition -> 180 ('180px' -> 180 from parseInt)
-    dodger.style.left = currentPosition - 5 + 'px' // (175px)
+    if (currentPosition - 5 > 0) {
+          dodger.style.left = currentPosition - 5 + 'px' // (175px)
+    }
   } else if (event.keyCode === 39) {
     moveDodgerRight()
   }
