@@ -17,8 +17,9 @@ function onKeyDown(event) {
 function moveDodgerRight() {
   const currentPosition = parseInt(dodger.style.left)
   // currentPosition -> 180 ('180px' -> 180 from parseInt)
-  
-  dodger.style.left = currentPosition + 5 + 'px' // (175px)
+  if (currentPosition - 5 <= 400) {
+    dodger.style.left = currentPosition + 5 + 'px' // (175px)
+  }
 }
 
 // 2 - Add the event listener
