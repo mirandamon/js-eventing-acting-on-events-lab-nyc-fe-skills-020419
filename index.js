@@ -1,6 +1,5 @@
 // 1 - find the element
 const dodger = document.getElementById('dodger')
-console.log(dodger)
 
 function onKeyDown(event) {
   console.log(event)
@@ -11,4 +10,4 @@ function onKeyDown(event) {
 }
 
 // 2 - Add the event listener
-dodger.addEventListener('keydown', onKeyDown)
+dodger.addEventListener('keydown', () => console.log('working?'))
