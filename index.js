@@ -1,5 +1,6 @@
 // 1 - find the element
 const dodger = document.getElementById('dodger')
+console.log(dodger)
 
 function onKeyDown(event) {
   console.log(event)
